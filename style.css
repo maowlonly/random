@@ -1,0 +1,367 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #333333;
+    }
+
+
+    /* ===== NAVBAR ===== */
+    /* Belajar di: Pertemuan 1 */
+
+    .navbar {
+      background-color: #1a1a2e;
+      padding: 16px 0;
+    }
+
+    .navbar-isi {
+      display: flex;                    /* FLEXBOX — Pertemuan 2 */
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .navbar-menu {
+      display: flex;                    /* FLEXBOX — Pertemuan 2 */
+      gap: 24px;
+      list-style: none;
+    }
+
+    .navbar-menu a {
+      color: #cccccc;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .navbar-menu a:hover {
+      color: #ffffff;
+    }
+
+    /* Hamburger — tampil hanya di HP */
+    .navbar-hamburger {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+
+    /* ===== CONTAINER ===== */
+    /* Bungkus konten supaya tidak mepet ke pinggir */
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+
+    /* ===== BUTTON ===== */
+    /* Belajar di: Pertemuan 1 */
+
+    .tombol {
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+    }
+
+    .tombol-utama {
+      background-color: #4f46e5;
+      color: #ffffff;
+    }
+
+    .tombol-utama:hover {
+      background-color: #3730a3;
+    }
+
+    .tombol-outline {
+      background-color: transparent;
+      border: 2px solid #4f46e5;
+      color: #4f46e5;
+    }
+
+    .tombol-outline:hover {
+      background-color: #4f46e5;
+      color: #ffffff;
+    }
+
+
+    /* ===== SECTION (tiap bagian halaman) ===== */
+
+    .section {
+      padding: 64px 0;
+    }
+
+    .section-judul {
+      font-size: 28px;
+      font-weight: bold;
+      color: #1a1a2e;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .section-subjudul {
+      font-size: 15px;
+      color: #888888;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .garis-tengah {
+      width: 48px;
+      height: 4px;
+      background-color: #4f46e5;
+      margin: 12px auto 40px auto;
+      border-radius: 2px;
+    }
+
+
+    /* ===== HERO (bagian paling atas) ===== */
+    /* Belajar di: Pertemuan 1–2 */
+
+    .hero {
+      background-color: #1a1a2e;
+      padding: 80px 0;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .hero-foto {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-color: #4f46e5;
+      margin: 0 auto 20px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+    }
+
+    .hero-nama {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .hero-deskripsi {
+      font-size: 18px;
+      color: #aaaaaa;
+      margin-bottom: 28px;
+    }
+
+    .hero-tombol-grup {
+      display: flex;                    /* FLEXBOX — Pertemuan 2 */
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+
+    /* ===== KEAHLIAN (skill) ===== */
+    /* Belajar di: Pertemuan 2 — Flexbox */
+
+    .skill-daftar {
+      display: flex;                    /* FLEXBOX */
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    .skill-item {
+      background-color: #ede9fe;
+      color: #4f46e5;
+      padding: 8px 20px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+
+    /* ===== PROYEK (project grid) ===== */
+    /* Belajar di: Pertemuan 3 — Grid */
+
+    .proyek-grid {
+      display: grid;                    /* GRID */
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .proyek-kartu {
+      background-color: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .proyek-gambar {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      display: block;
+      background-color: #ddd6fe;
+    }
+
+    .proyek-isi {
+      padding: 16px;
+    }
+
+    .proyek-judul {
+      font-size: 16px;
+      font-weight: bold;
+      color: #1a1a2e;
+      margin-bottom: 6px;
+    }
+
+    .proyek-teks {
+      font-size: 13px;
+      color: #666666;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .proyek-tag-grup {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .proyek-tag {
+      background-color: #f3f4f6;
+      color: #555555;
+      font-size: 11px;
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+
+
+    /* ===== KONTAK ===== */
+    /* Belajar di: Pertemuan 4 */
+
+    .kontak-kotak {
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 40px;
+      max-width: 600px;
+      margin: 0 auto;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .kontak-baris {
+      display: flex;                    /* FLEXBOX */
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    .kontak-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background-color: #f3f4f6;
+      color: #333333;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .kontak-link:hover {
+      background-color: #e5e7eb;
+    }
+
+
+    /* ===== FOOTER ===== */
+
+    .footer {
+      background-color: #1a1a2e;
+      color: #888888;
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+    }
+
+
+    /* ============================================
+      PERTEMUAN 4 — RESPONSIVE (tampilan HP)
+      Belajar: media query
+    ============================================ */
+
+    @media (max-width: 768px) {
+
+      /* Navbar: menu sembunyi, hamburger muncul */
+      .navbar-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #1a1a2e;
+        padding: 20px;
+        gap: 16px;
+        z-index: 100;
+      }
+
+      .navbar-menu.aktif {
+        display: flex;
+      }
+
+      .navbar-hamburger {
+        display: block;
+      }
+
+      .navbar-isi {
+        position: relative;
+      }
+
+      /* Hero lebih kecil */
+      .hero-nama {
+        font-size: 26px;
+      }
+
+      .hero-deskripsi {
+        font-size: 15px;
+      }
+
+      /* Proyek: 1 kolom di HP */
+      .proyek-grid {
+        grid-template-columns: 1fr;
+      }
+
+      /* Kontak: kolom vertikal */
+      .kontak-baris {
+        flex-direction: column;
+        align-items: center;
+      }
+
+    }
+
+    @media (max-width: 540px) {
+      .hero-tombol-grup {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
